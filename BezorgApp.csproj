@@ -67,7 +67,12 @@
 	<ItemGroup>
 	  <Folder Include="MVVM\Model\" />
 	  <Folder Include="MVVM\ViewModel\" />
-	  <Folder Include="MVVM\View\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="MVVM\View\Scan_page.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
