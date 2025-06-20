@@ -20,9 +20,14 @@
            FontSize="25"
                
           />
-
-        <Button Text="Open Camera"
-                Clicked="OnOpenCameraClicked" />
+        
+        
+        <Button Grid.ColumnSpan="2"
+                Text="Open Camera"
+                Grid.Row="1"
+                HorizontalOptions="Fill"
+                VerticalOptions="Fill"
+                Clicked="OnOpenCameraClicked"/>
     </Grid>
     
     
