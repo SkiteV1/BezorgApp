@@ -1,4 +1,6 @@
-﻿namespace BezorgApp
+﻿using BezorgApp.MVVM.View;
+
+namespace BezorgApp
 {
     public partial class MainPage : ContentPage
     {
@@ -7,6 +9,11 @@
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void OnOpenCameraClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Scan_page());
         }
     }
 }

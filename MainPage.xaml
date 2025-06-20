@@ -18,8 +18,13 @@
            HorizontalOptions="Fill"
            VerticalOptions="Start"
            FontSize="25"
+               
           />
 
+        <Button Text="Open Camera"
+                Clicked="OnOpenCameraClicked" />
     </Grid>
+    
+    
 
 </ContentPage>
