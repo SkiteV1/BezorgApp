@@ -8,13 +8,13 @@
       Padding="0"
       RowSpacing="10"
       ColumnSpacing="10"
-      BackgroundColor="DarkCyan">
+      BackgroundColor="White">
 
         <Label Grid.ColumnSpan="2"
           Text="OrderLijst"
            TextColor="White"
            HorizontalTextAlignment="Center"
-           BackgroundColor="LimeGreen"
+           BackgroundColor="Black"
            HorizontalOptions="Fill"
            VerticalOptions="Start"
            FontSize="25"
