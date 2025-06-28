@@ -7,7 +7,7 @@
     Title="BezorgApp">
 
     <ShellContent
-        Title="Matric Inc"
+        Title="Matric Inc Delivery App"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

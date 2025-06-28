@@ -4,13 +4,18 @@
              x:Class="BezorgApp.MVVM.View.Scan_page"
              Title="Scan Page">
 
-    <VerticalStackLayout Padding="20" Spacing="25">
+    <VerticalStackLayout Padding="0" Spacing="25"
+                         BackgroundColor="DarkCyan">
 
         <Label Text="Maak een foto van de order"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               BackgroundColor="LimeGreen"
                FontSize="20"
-               HorizontalOptions="Center" />
+               HorizontalOptions="Fill" />
 
         <Button Text="Open Camera"
+                BackgroundColor="LimeGreen"
                 Clicked="TakePhotoClicked" />
 
         <Image x:Name="PhotoPreview"
