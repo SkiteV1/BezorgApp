@@ -18,18 +18,15 @@
            HorizontalOptions="Fill"
            VerticalOptions="Start"
            FontSize="25"
-               
           />
-        
-        
+
         <Button Grid.ColumnSpan="2"
                 Text="Open Camera"
                 Grid.Row="1"
                 HorizontalOptions="Fill"
+                BackgroundColor="LimeGreen"
                 VerticalOptions="Fill"
                 Clicked="OnOpenCameraClicked"/>
     </Grid>
     
-    
-
 </ContentPage>
