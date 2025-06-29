@@ -18,24 +18,24 @@
                          Margin="0,550,0,0"
                          Clicked="OnOpenCameraClicked"/>
         </VerticalStackLayout>
-        <ListView x:Name="listView" FlexLayout.Grow="1" HasUnevenRows="True" ItemTapped="listView_ItemTapped" Margin="0,-120,-400,0">
+        <ListView x:Name="listView" FlexLayout.Grow="1" HasUnevenRows="True" ItemTapped="listView_ItemTapped" Margin="0,-120,-110,0">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <VerticalStackLayout Padding="5">
-                            <Label Text="{Binding Name}" FontSize="15" />
+                            <Label Text="{Binding Name}" FontSize="15" TextColor="White" />
                             <Grid RowDefinitions="15, Auto, *"
                                      ColumnDefinitions=".75*, .25*"
-                                     Padding="2"
-                                     RowSpacing="2"
-                                     ColumnSpacing="2">
+                                     Padding="1"
+                                     RowSpacing="1"
+                                     ColumnSpacing="1">
                                 <!--<Grid.ColumnDefinitions>
                                     <Grid.ColumnDefinition Width="Auto" />
                                     <Grid.ColumnDefinition Width="*" />
                                     <Grid.ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>-->
-                                <Label Grid.Column="0"  Text="{Binding QrCode}" />
-                                <Label Grid.Column="2" Text="{Binding Status}" />
+                                <Label Grid.Column="0"  Text="{Binding QrCode}" TextColor="White"/>
+                                <Label Grid.Column="0" Text="{Binding Status}" TextColor="White" HorizontalTextAlignment="End"/>
                             </Grid>
                         </VerticalStackLayout>
                     </ViewCell>

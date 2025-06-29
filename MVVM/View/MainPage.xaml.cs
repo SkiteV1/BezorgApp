@@ -57,9 +57,24 @@ namespace BezorgApp
 
         }
 
-        private void listView_ItemTapped(object sender, ItemTappedEventArgs e)
+        private async void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
+            var order = (Order)e.Item;
+            var action = await DisplayActionSheet("Action", "Cancel", null, "Edit", "Delete");
 
+            switch (action)
+            {
+                case "Edit":
+                    _editOrderId = order.Id;
+                    nameEntryField.Text = order.Name;
+                    qrcodeEntryField.Text = order.QrCode;
+                    statusEntryField.Text = order.Status;
+                    break;
+                case "Delete":
+                    await sQLite_Connection.Delete(order);
+                    listView.ItemsSource = await sQLite_Connection.GetOrders();
+                    break;
+            }
         }
 
         private async void OnOpenCameraClicked(object sender, EventArgs e)
