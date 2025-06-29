@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using BezorgApp.Data;
+using Microsoft.Extensions.Logging;
 
 namespace BezorgApp
 {
@@ -15,8 +16,11 @@ namespace BezorgApp
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            builder.Services.AddSingleton<SQLite_Connection>();
+            builder.Services.AddTransient<MainPage>();
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

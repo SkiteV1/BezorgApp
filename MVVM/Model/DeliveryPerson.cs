@@ -12,7 +12,7 @@ namespace BezorgApp.MVVM.Model
         [Required]
         public int Id { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [Required]
         public int WorkId { get; set; }
     }
