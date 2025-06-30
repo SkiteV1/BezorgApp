@@ -4,36 +4,25 @@
              x:Class="BezorgApp.MainPage">
 
     <FlexLayout Direction="Column" BackgroundColor="DarkCyan">
-        <VerticalStackLayout Padding="10"  FlexLayout.Basis="Auto">
+
+        <StackLayout Padding="10"  FlexLayout.Basis="Auto">
+            <Button x:Name="openCamera" Text="OpenCamera" Clicked="OnOpenCameraClicked" BackgroundColor="LimeGreen" Margin="0,10,0,0"/>
             <Entry x:Name="nameEntryField" Placeholder="Name" TextColor="White"/>
             <Entry x:Name="qrcodeEntryField" Placeholder="QrCode" TextColor="White"/>
             <Entry x:Name="statusEntryField" Placeholder="Status" TextColor="White"/>
-            <Button x:Name="saveButton" Text="Save" Clicked="saveButton_Clicked" BackgroundColor="LimeGreen" Margin="0,0,0,0"/>
-            <Button Grid.ColumnSpan="2"
-                         Text="Open Camera"
-                         Grid.Row="1"
-                         HorizontalOptions="Fill"
-                         BackgroundColor="LimeGreen"
-                         VerticalOptions="Fill"
-                         Margin="0,550,0,0"
-                         Clicked="OnOpenCameraClicked"/>
-        </VerticalStackLayout>
-        <ListView x:Name="listView" FlexLayout.Grow="1" HasUnevenRows="True" ItemTapped="listView_ItemTapped" Margin="0,-120,-110,0">
+            <Button x:Name="saveButton" Text="Save" Clicked="saveButton_Clicked" BackgroundColor="LimeGreen" Margin="0,10,0,400"/>
+        </StackLayout>
+        <ListView x:Name="listView" FlexLayout.Grow="1" HasUnevenRows="True" ItemTapped="listView_ItemTapped" Margin="0,10,0,0">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <VerticalStackLayout Padding="5">
+                        <VerticalStackLayout Padding="1">
                             <Label Text="{Binding Name}" FontSize="15" TextColor="White" />
                             <Grid RowDefinitions="15, Auto, *"
-                                     ColumnDefinitions=".75*, .25*"
-                                     Padding="1"
-                                     RowSpacing="1"
-                                     ColumnSpacing="1">
-                                <!--<Grid.ColumnDefinitions>
-                                    <Grid.ColumnDefinition Width="Auto" />
-                                    <Grid.ColumnDefinition Width="*" />
-                                    <Grid.ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>-->
+                                     ColumnDefinitions=".90*, .10*"
+                                     Padding="4"
+                                     RowSpacing="4"
+                                     ColumnSpacing="4">
                                 <Label Grid.Column="0"  Text="{Binding QrCode}" TextColor="White"/>
                                 <Label Grid.Column="0" Text="{Binding Status}" TextColor="White" HorizontalTextAlignment="End"/>
                             </Grid>
@@ -43,35 +32,4 @@
             </ListView.ItemTemplate>
         </ListView>
     </FlexLayout>
-
-
-    <!--
-    <Grid RowDefinitions="100, Auto, *"
-      ColumnDefinitions=".75*, .25*"
-      Padding="0"
-      RowSpacing="10"
-      ColumnSpacing="10"
-      BackgroundColor="DarkCyan">
-
-        <Label Grid.ColumnSpan="2"
-          Text="OrderLijst"
-           TextColor="White"
-           HorizontalTextAlignment="Center"
-           BackgroundColor="LimeGreen"
-           HorizontalOptions="Fill"
-           VerticalOptions="Start"
-           FontSize="25"
-          />
-
-        <Button Grid.ColumnSpan="2"
-                Text="Open Camera"
-                Grid.Row="1"
-                HorizontalOptions="Fill"
-                BackgroundColor="LimeGreen"
-                VerticalOptions="Fill"
-                Clicked="OnOpenCameraClicked"/>
-    </Grid>
-    -->
-
-
 </ContentPage>

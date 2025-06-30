@@ -39,4 +39,9 @@ public partial class Scan_page : ContentPage
             await DisplayAlert("Fout", $"Er is iets misgegaan bij het maken van de foto. Probeer dit opnieuw. {ex.Message}", "OK");
         }
     }
+
+    private async void BackButton_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PopModalAsync();
+    }
 }
