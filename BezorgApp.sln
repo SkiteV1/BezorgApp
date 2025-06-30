@@ -5,8 +5,6 @@ VisualStudioVersion = 17.14.36127.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BezorgApp", "BezorgApp.csproj", "{1AB6D4F2-9B55-42D8-AB51-5A4348ADB67E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BezorgAppAPI", "..\..\..\..\..\Repo's\BezorgAppAPI\BezorgAppAPI\BezorgAppAPI.csproj", "{AC143B9A-6A96-46A5-A67A-7251BE2E8381}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,10 +16,6 @@ Global
 		{1AB6D4F2-9B55-42D8-AB51-5A4348ADB67E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{1AB6D4F2-9B55-42D8-AB51-5A4348ADB67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AB6D4F2-9B55-42D8-AB51-5A4348ADB67E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AC143B9A-6A96-46A5-A67A-7251BE2E8381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AC143B9A-6A96-46A5-A67A-7251BE2E8381}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AC143B9A-6A96-46A5-A67A-7251BE2E8381}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AC143B9A-6A96-46A5-A67A-7251BE2E8381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

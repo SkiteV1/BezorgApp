@@ -79,7 +79,7 @@ namespace BezorgApp
 
         private async void OnOpenCameraClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Scan_page());
+            await Navigation.PushModalAsync(new Scan_page());
         }
     }
 }
